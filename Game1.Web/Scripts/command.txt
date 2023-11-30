@@ -1,0 +1,2 @@
+dotnet ef migrations add IdentityProvision --project Game1.Web
+dotnet ef database update --project Game1.Web

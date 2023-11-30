@@ -1,0 +1,26 @@
+$theme-bg: #000849;
+$theme-primary-color: #571ce0;
+$theme-secondary-color: #FB2576;
+$theme-accent-one: #000000;
+$theme-accent-two: #878A9B;
+$theme-accent-three: #c1cf00;
+$theme-link-color: #008CFF;
+$theme-color-white: #ffffff;
+$theme-color-red: #FF0000;
+
+/*-- font style --*/
+$font-extra-small: 0.75rem;
+$font-small: 0.875rem;
+$font-black: 900;
+
+$theme-box-shadow: 0 0 1.375rem rgba($theme-accent-one, .10);
+
+$theme-text-shadow: 0 0 1.375rem rgba($theme-accent-one, .10);
+
+$theme-border-radius: 1.25rem;
+
+/*-- media query --*/
+$break-small: 575px;
+$break-medium: 767px;
+$break-large: 992px;
+$break-x-large: 1200px;

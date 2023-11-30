@@ -1,0 +1,240 @@
+﻿@model RegistrationViewModel
+@{
+    Layout = null;
+}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="ThemesLay">
+    <!-- Favicon icon -->
+    <link rel="icon" type="/image/png" sizes="50x50" href="/assets/images/favicon.png">
+
+    <!-- main CSS -->
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <title>OnTheBett - Signup Online Betting HTML5 Website Template</title>
+</head>
+
+<body class="bg-color">
+    <!-- preloader section -->
+    <div class="page-loader">
+        <span class="loader"></span>
+    </div>
+    <!-- page wrapper section -->
+    <div id="wrapper"></div>
+    <!-- Header Part -->
+    <header class="navbar navbar-expand-lg py-lg-0 py-2 px-0 theme-box-shadow header">
+        <nav class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/images/brand.png" class="img-fluid" alt="Brand Logo" title="Brand Logo">
+            </a>
+            <div class="btn-wrapper">
+                <button class="navbar-toggler theme-bg-secondary border-0 menu-toggle" type="button" data-label="Menu"
+                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bars"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-effect dropdown-toggle" aria-current="page" href="javascript:void(0)"
+                           id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Home</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home Main</a></li>
+                            <li><a class="dropdown-item" href="index-video.html">Home Video</a></li>
+                            <li><a class="dropdown-item" href="index-banner.html">Home Banner</a></li>
+                            <li><a class="dropdown-item" href="index-slider.html">Home Slider</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-effect" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-effect dropdown-toggle" href="javascript:void(0)" id="navbarDropdown2"
+                           data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            Tournaments
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li>
+                                <a class="dropdown-item sub" href="javascript:void(0)" id="navbarSubDropdown2"
+                                   data-bs-toggle="dropdown" aria-expanded="false">Betting Tournaments</a>
+                                <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarSubDropdown2">
+                                    <li><a class="dropdown-item" href="tournaments.html">Tournaments</a></li>
+                                    <li><a class="dropdown-item" href="tournaments-details.html">Tournaments Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="bets.html">Soccer Bets</a></li>
+                            <li><a class="dropdown-item" href="currency-bet.html">Currency Bet</a></li>
+                            <li><a class="dropdown-item" href="betting-details.html">Betting Details</a></li>
+                            <li><a class="dropdown-item" href="create-new-currency.html">Create New Currency</a></li>
+                            <li><a class="dropdown-item" href="bets-fee.html">Bets Fee</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-effect dropdown-toggle" href="javascript:void(0)" id="navbarDropdown3"
+                           data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy & Policy</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms & Condition</a></li>
+                            <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="error.html">404</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-effect dropdown-toggle" href="javascript:void(0)" id="navbarDropdown4"
+                           data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                            <li><a class="dropdown-item" href="blog-grid.html">Blog Grid</a></li>
+                            <li><a class="dropdown-item" href="blog-masonry.html">Blog Masonry</a></li>
+                            <li><a class="dropdown-item" href="blog-sidebar.html">Blog Grid With Sidebar</a></li>
+                            <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-effect" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-2 justify-content-center align-items-center position-relative">
+                    <button class="rounded-pill btn custom-btn-secondary primary-btn-effect" type="submit"
+                            onclick="window.location.href='signin.html';">
+                        <i class="bi bi-person"></i>
+                    </button>
+                    <span class="ms-2">Login/Register</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- breadcrumb section -->
+    <div class="breadcrumb-area">
+        <div class="container">
+            <!-- row -->
+            <div class="row ">
+                <!-- col -->
+                <div class="col-12 col-lg-6 align-self-center">
+                    <!-- breadcrumb -->
+                    <div class="page-breadcrumb">
+                        <div class="mb-3">
+                            <ul class="list">
+                                <li><a href="index.html">Home</a></li>
+                                <li>Admin</li>
+                            </ul>
+                        </div>
+                        <h2 class="display-4 mb-0 theme-text-white font-black">Add Administrator</h2>
+                    </div>
+                </div>
+                @* <div class="col-12 col-lg-6 align-self-center text-center">
+                    <figure class="mb-0 mt-5 pt-0 pt-lg-5 hero-image">
+                        <img src="/assets/images/breadcrumb/signup.png" class="img-fluid " alt="hero image">
+                    </figure>
+                </div> *@
+            </div>
+        </div>
+    </div>
+    <!-- signup page section -->
+    <div class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 offset-lg-3">
+                    <div class="theme-box-shadow theme-border-radius theme-transparent-bg p-4 p-lg-5">
+                        <!-- signup content -->
+                        <div class="row">
+                            <div class="col-12">
+                                <form class="needs-validation" method="post" asp-action="Add">
+                                    <div class="mb-3">
+                                        <label asp-for="FirstName" class="form-label fw-bold">First Name</label>
+                                        <input asp-for="FirstName" type="text" class="form-control form-control-th rounded-pill" id="floatingInput"
+                                               placeholder="First Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label asp-for="LastName" class="form-label fw-bold">Last Name</label>
+                                        <input asp-for="LastName" type="text" class="form-control form-control-th rounded-pill" id="floatingInput"
+                                               placeholder="Last Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label asp-for="UserName" class="form-label fw-bold">User Name</label>
+                                        <input asp-for="UserName" type="text" class="form-control form-control-th rounded-pill" id="floatingInput2"
+                                               placeholder="User Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label asp-for="Contact" class="form-label fw-bold">Number</label>
+                                        <input asp-for="Contact" type="number" class="form-control form-control-th rounded-pill" id="floatingInput3"
+                                               placeholder="Number">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label asp-for="Password" class="form-label fw-bold">Password</label>
+                                        <input asp-for="Password" type="password" class="form-control form-control-th rounded-pill" id="floatingPassword"
+                                               placeholder="Password">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label asp-for="ConfirmPass" class="form-label fw-bold">Confirm Password</label>
+                                        <input asp-for="ConfirmPass" type="password" class="form-control form-control-th rounded-pill" id="floatingPassword2"
+                                               placeholder="Password">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold">Role</label>
+                                        <div class="select-wrap">
+                                            <select asp-for="Role" class="form-control form-control-th rounded-pill">
+                                                <option value="SAD">Site Admin</option>
+                                                <option value="ADM">Admin</option>
+                                                <option value="INC">Incorporator</option>
+                                                <option value="SUB">Sub Operator</option>
+                                                <option value="MST">Master</option>
+                                                <option value="GLD">Gold</option>
+                                                <option value="PLY">Player</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <div class="mb-3">
+                                        <button type="submit"
+                                                class="rounded-pill btn custom-btn-primary primary-btn-effect d-flex w-100 justify-content-center align-items-center">
+                                            ADD
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Part -->
+    <footer class="footer pt-5">
+        
+        <div class="py-2 mt-5 text-center copyright">
+            <p class="mb-0 font-small">
+                &copy; Copyright 2023 by <a href="javascript:void(0)">Onthebett</a>, All rights
+                reserved.
+            </p>
+            <span class="font-extra-small">
+                game involves an element of financial risk and may be addictive. Please play
+                responsibly and at your own risk
+            </span>
+        </div>
+        <a href="#wrapper" data-type="section-switch" class="scrollup back-top"><i class="bi bi-chevron-double-up"></i></a>
+    </footer>
+
+    <!-- js file attached -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/jquery-ui.js"></script>
+    <script src="/assets/js/wow.min.js"></script>
+    <!-- theme main js -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/nice-select.js"></script>
+</body>
+
+</html>

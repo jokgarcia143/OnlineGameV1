@@ -1,0 +1,408 @@
+// dashboard header css
+.header-dashboard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    .wrap {
+        position: relative;
+
+        .item-wrap {
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .nice-select {
+                border-radius: 0px;
+                background-color: transparent;
+                border-color: transparent;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 50px;
+            }
+
+            .notify-btn {
+                cursor: pointer;
+                position: relative;
+
+                i {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .tag {
+                position: absolute;
+                top: 0;
+                right: -6px;
+                width: 16px;
+                height: 16px;
+                background: $theme-accent-three;
+                font-weight: bold;
+                border-radius: 50%;
+                font-size: 12px;
+                line-height: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $theme-accent-one;
+            }
+
+            .user-btn {
+                cursor: pointer;
+
+                i {
+                    font-size: 1rem;
+                    margin-left: 0.5rem;
+                }
+            }
+
+        }
+    }
+
+    .main-box {
+        position: absolute;
+        top: 50px;
+        width: 350px;
+        right: 0;
+        padding: 20px;
+        background: $theme-accent-one;
+        box-shadow: $theme-box-shadow;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 0.3s;
+        visibility: hidden;
+        max-height: 350px;
+        overflow-y: scroll;
+
+        button {
+            background-color: $theme-bg;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+
+            &:hover {
+                background-color: $theme-primary-color;
+            }
+
+            i {
+                font-size: 1.2rem;
+                line-height: normal;
+                color: $theme-color-white;
+            }
+        }
+
+        &.active {
+            transform: translateY(0px);
+            transition: 0.3s;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .tag-count {
+            width: 28px;
+            height: 28px;
+            background: $theme-accent-three;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $theme-accent-one;
+            margin-left: 10px;
+            border-radius: 50%;
+        }
+
+        ul {
+            li {
+                margin-top: 5px;
+                border-top: 1px solid $theme-accent-two;
+                padding-top: 1rem;
+                margin-top: 1rem;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    color: $theme-color-white;
+
+                    i {
+                        margin-right: 1rem;
+                        font-size: 1.5rem;
+                    }
+
+                    &.active,
+                    &:hover {
+                        color: $theme-secondary-color;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// dashboard content css
+.dashboard-section {
+    padding-bottom: 30px;
+    padding-top: 100px;
+
+    .dashboard-tab {
+        background-color: rgba($theme-primary-color, 0.1);
+        margin-bottom: 30px;
+        border-radius: $theme-border-radius;
+        padding: 1rem;
+
+        ul {
+            border-bottom: none;
+
+            li {
+                display: block;
+                width: 100%;
+
+                .nav-link {
+                    background-color: transparent;
+                    color: $theme-color-white;
+                    text-transform: capitalize;
+                    padding: 1rem 0.5rem;
+                    font-weight: 700;
+                    border: none;
+                    border-radius: 0;
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                    transition: 0.3s;
+                    border-radius: $theme-border-radius;
+
+                    @media screen and (max-width:$break-large) {
+                        padding: 10px 12px;
+                    }
+
+                    &.active,
+                    &:hover {
+                        background: $theme-primary-color;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .nice-select {
+        border: 2px solid $theme-primary-color;
+        border-radius: $theme-border-radius;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        width: 35%;
+        height: 35px;
+
+        &::after {
+            height: 10px;
+            margin-top: -7px;
+            pointer-events: none;
+            position: absolute;
+            right: 20px;
+            width: 10px;
+        }
+
+        span {
+            font-size: 16px;
+        }
+
+        .list {
+            width: 100%;
+            background: $theme-primary-color;
+            border: 1px solid $theme-primary-color;
+
+            .option {
+                background: transparent;
+                font-size: 16px;
+
+                &:hover {
+                    color: $theme-secondary-color;
+                }
+            }
+
+            .focus {
+                background-color: transparent;
+                color: $theme-secondary-color;
+            }
+        }
+    }
+
+    label {
+        margin-bottom: 0.5rem;
+    }
+
+    .balance {
+        background: $theme-primary-color;
+        border-radius: $theme-border-radius;
+        padding: 10px 25px;
+        margin: 20px 0;
+        color: $theme-accent-three;
+        text-align: center;
+
+        span {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+    }
+
+    .input-area {
+        display: flex;
+        align-items: center;
+        border: 1px solid $theme-primary-color;
+        background-color: $theme-bg;
+        border-radius: 50rem;
+        padding-left: 15px;
+        padding-right: 20px;
+
+        img {
+            cursor: pointer;
+        }
+
+        input {
+            background-color: $theme-bg;
+            border: none;
+            color: $theme-color-white;
+            width: 100%;
+            height: 50px;
+            border-radius: $theme-border-radius;
+        }
+
+    }
+
+    .select-wrap {
+        display: flex;
+        align-items: center;
+        border: 1px solid $theme-primary-color;
+        background-color: $theme-bg;
+        border-radius: 50rem;
+
+        .nice-select {
+            border: 1px solid transparent;
+            border-radius: 50rem;
+            background: $theme-bg;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            color: $theme-secondary-color;
+            height: 50px;
+        }
+    }
+
+    .input-select-wrap {
+        display: flex;
+        align-items: center;
+        border: 1px solid $theme-primary-color;
+        background-color: $theme-bg;
+        border-radius: 50rem;
+
+        input {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border: none;
+            border-right: 1px solid $theme-primary-color;
+            background-color: transparent;
+            padding: 10px 20px;
+            color: $theme-color-white;
+            width: 100%;
+            height: 50px;
+        }
+
+        .nice-select {
+            border: 2px solid transparent;
+            border-radius: $theme-border-radius;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            width: 20%;
+            height: 50px;
+        }
+    }
+
+    .file-upload {
+        display: flex;
+        align-items: center;
+
+        input {
+            margin: 0;
+            opacity: 0;
+            visibility: hidden;
+            width: 0;
+        }
+
+        .file {
+            cursor: pointer;
+            position: relative;
+            margin-bottom: 4px;
+            width: 100%;
+
+            .file-custom {
+                z-index: 5;
+                height: 50px;
+                border-radius: 50rem;
+                border: 1px solid $theme-primary-color;
+                display: flex;
+                align-items: center;
+                background: $theme-bg;
+
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    content: "\F603";
+                    font-family: "bootstrap-icons";
+                    width: 24px;
+                    height: 24px;
+                    left: 20px;
+                    color: $theme-secondary-color;
+                }
+
+                &::after {
+                    content: "Upload Your Avatar";
+                    position: absolute;
+                    left: 50px;
+                    color: $theme-secondary-color;
+                }
+            }
+        }
+    }
+
+    ul.currency-amount {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        li {
+            margin-right: 5px;
+
+            a {
+                display: inline-block;
+                background: $theme-accent-one;
+                border-radius: $theme-border-radius;
+                color: $theme-color-white;
+                margin-bottom: 0.5rem;
+                padding: 0rem 1rem;
+                width: 60px;
+                height: 40px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover,
+                &:active,
+                .active {
+                    background-color: $theme-secondary-color;
+
+                }
+            }
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
