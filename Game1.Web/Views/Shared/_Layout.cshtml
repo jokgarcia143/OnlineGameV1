@@ -12,7 +12,18 @@
 
     <!-- main CSS -->
     <link href="/assets/css/main.css" rel="stylesheet">
-    <title>OnTheBett - Video - Online Betting HTML5 Website Template</title>
+
+    <!-- DataTables CSS -->
+    @* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> *@
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+    
+
+    @* https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css *@
+    @* https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css *@
+
+    <!-- DataTables JavaScript -->
+    
+
 </head>
 
 <body class="bg-color">
@@ -26,7 +37,7 @@
     <header class="navbar navbar-expand-lg py-lg-0 py-2 px-0 theme-box-shadow header header-dashboard">
         <nav class="container">
             <a class="navbar-brand" href="#">
-                <img src="/assets/images/brand.png" class="img-fluid" alt="Brand Logo" title="Brand Logo">
+                <img src="/assets//images/brand.png" class="img-fluid" alt="Brand Logo" title="Brand Logo">
             </a>
             <div class="btn-wrapper">
                 <button class="navbar-toggler theme-bg-secondary border-0 menu-toggle" type="button" data-label="Menu"
@@ -37,7 +48,7 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
+                    @* <li class="nav-item dropdown">
                         <a class="nav-link nav-effect dropdown-toggle" aria-current="page" href="javascript:void(0)"
                            id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Home</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -46,14 +57,14 @@
                             <li><a class="dropdown-item" href="index-banner.html">Home Banner</a></li>
                             <li><a class="dropdown-item" href="index-slider.html">Home Slider</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
+                    </li> *@
+                    @* <li class="nav-item">
                         <a class="nav-link nav-effect" href="dashboard.html">Dashboard</a>
-                    </li>
+                    </li> *@
                     <li class="nav-item dropdown">
                         <a class="nav-link nav-effect dropdown-toggle" href="javascript:void(0)" id="navbarDropdown2"
                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                            Tournaments
+                            Transactions
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
                             <li>
@@ -399,8 +410,12 @@
         <a href="#wrapper" data-type="section-switch" class="scrollup back-top"><i class="bi bi-chevron-double-up"></i></a>
     </footer> *@
 
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
     <!-- js file attached -->
-    <script src="/assets/js/jquery.min.js"></script>
+    @* <script src="/assets/js/jquery.min.js"></script> *@
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/owl.carousel.min.js"></script>
     <script src="/assets/js/jquery.magnific-popup.min.js"></script>
@@ -410,6 +425,39 @@
     <script src="/assets/js/nice-select.js"></script>
     <!--Data Calendar js -->
     <script src="/assets/js/jquery-ui.js"></script>
+    <!--Data Table -->
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+    
+
+    <script>
+        $(function () {
+            $('#example3').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": true,
+                "responsive": true,
+            });
+            $('#example4').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": true,
+                "responsive": true,
+            });
+        }
+    </script>
+    <script>
+            $(document).ready(function () {
+            new DataTable('#example3');
+            new DataTable('#example4');
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -1,0 +1,154 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="tab-pane fade show active" id="dashboard-tab-pane" role="tabpanel" aria-labelledby="dashboard-tab" tabindex="0">
+    <!-- 1. dashboard section -->
+    <div class="row">
+        <div class="col-12">
+            @* <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="theme-box-shadow theme-border-radius p-2 theme-bg-white theme-transparent-bg">
+            <div class="row g-0">
+            <div class="col-4 overflow-hidden theme-border-radius">
+            <div class="overflow-hidden">
+            <figure class="mb-0">
+            <img src="/assets/images/icons/dashboard-icon01.png" class="img-fluid"
+            alt="dashboard icon 01" title="dashboard icon 01">
+            </figure>
+            </div>
+            </div>
+            <div class="col-8">
+            <div class="ps-md-0 ps-xxl-3 d-flex justify-content-between align-items-center h-100">
+            <div class="d-flex flex-column">
+            <span class="d-flex fw-bold">Total Match</span>
+            <span class="fw-bold price theme-text-secondary">
+            699
+            </span>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <!-- dashboard features -->
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="theme-box-shadow theme-border-radius p-2 theme-bg-white theme-transparent-bg">
+            <div class="row g-0">
+            <div class="col-4 overflow-hidden theme-border-radius">
+            <div class="overflow-hidden">
+            <figure class="mb-0">
+            <img src="/assets/images/icons/dashboard-icon02.png" class="img-fluid"
+            alt="dashboard icon 01" title="dashboard icon 01">
+            </figure>
+            </div>
+            </div>
+            <div class="col-8">
+            <div class="ps-md-0 ps-xxl-3 d-flex justify-content-between align-items-center h-100">
+            <div class="d-flex flex-column">
+            <span class="d-flex fw-bold">Win Chance</span>
+            <span class="fw-bold price theme-text-secondary">
+            91%
+            </span>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <!-- dashboard features -->
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="theme-box-shadow theme-border-radius p-2 theme-bg-white theme-transparent-bg">
+            <div class="row g-0">
+            <div class="col-4 overflow-hidden theme-border-radius">
+            <div class="overflow-hidden">
+            <figure class="mb-0">
+            <img src="/assets/images/icons/dashboard-icon03.png" class="img-fluid"
+            alt="dashboard icon 03" title="dashboard icon 03">
+            </figure>
+            </div>
+            </div>
+            <div class="col-8">
+            <div class="ps-md-0 ps-xxl-3 d-flex justify-content-between align-items-center h-100">
+            <div class="d-flex flex-column">
+            <span class="d-flex fw-bold">Prizes Pool</span>
+            <span class="fw-bold price theme-text-secondary">
+            210
+            </span>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <!-- dashboard features -->
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="theme-box-shadow theme-border-radius p-2 theme-bg-white theme-transparent-bg">
+            <div class="row g-0">
+            <div class="col-4 overflow-hidden theme-border-radius">
+            <div class="overflow-hidden">
+            <figure class="mb-0">
+            <img src="/assets/images/icons/dashboard-icon04.png" class="img-fluid"
+            alt="dashboard icon 04" title="dashboard icon 04">
+            </figure>
+            </div>
+            </div>
+            <div class="col-8">
+            <div class="ps-md-0 ps-xxl-3 d-flex justify-content-between align-items-center h-100">
+            <div class="d-flex flex-column">
+            <span class="d-flex fw-bold">Offer Amount</span>
+            <span class="fw-bold price theme-text-secondary">
+            <i class="bi bi-currency-dollar"></i>
+            10
+            </span>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <!-- dashboard features -->
+            </div> *@
+            <!-- recent activity section -->
+            <div class="d-flex flex-column theme-border-radius theme-bg-white theme-box-shadow mb-4">
+                <!-- my wallet section -->
+                <div class="d-flex justify-content-between p-3 wallet-head">
+                    <span class="fs-5 fw-bold">New Requests</span>
+                    <span class="font-small">Total 100 Requests</span>
+                </div>
+                <!-- my booking section -->
+                <div class="p-0 p-lg-3">
+                    <div class="tble_wrap">
+                        <div class="table-responsive theme-border-radius">
+                            <!-- load table -->
+                            <div class="container-fluid">
+                                @Html.Partial("_ApprovalTable", "")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- recent transaction section -->
+            <div class="d-flex flex-column theme-border-radius theme-bg-white theme-box-shadow">
+                <!-- my wallet section -->
+                <div class="d-flex justify-content-between p-3 wallet-head">
+                    <span class="fs-5 fw-bold">Load Request</span>
+                    <span class="font-small">Total 11 Request</span>
+                </div>
+                <!-- my load section -->
+                <div class="p-0 p-lg-3">
+                    <div class="tble_wrap">
+                        <div class="table-responsive theme-border-radius">
+                            <!-- load table -->
+                            <div class="container-fluid">
+                                @Html.Partial("_LoadTable", "")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>

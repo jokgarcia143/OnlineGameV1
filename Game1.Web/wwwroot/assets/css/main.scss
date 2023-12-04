@@ -80,6 +80,7 @@
                 color: $theme-color-white;
                 padding: 1.2rem 1rem;
                 font-weight: 600;
+                font-size: 30px;
 
                 @media screen and (max-width:$break-large) {
                     padding: 0.8rem 0rem;
@@ -1591,3 +1592,4 @@
         transform: translateY(-5px);
     }
 }
+

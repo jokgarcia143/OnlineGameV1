@@ -35,15 +35,40 @@
                             <i class="bi bi-coin fs-5 me-2 align-middle"></i>Buy Crypto
                         </button>
                     </li>
-                    
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="affiliate-tab" data-bs-toggle="tab" data-bs-target="#affiliate-tab-pane"
+                                type="button" role="tab" aria-controls="affiliate-tab-pane" aria-selected="false">
+                            <i class="bi bi-file-person fs-5 me-2 align-middle"></i>Affiliate
+                        </button>
+                    </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="transactions-tab" data-bs-toggle="tab"
                                 data-bs-target="#transactions-tab-pane" type="button" role="tab" aria-controls="transactions-tab-pane"
                                 aria-selected="false">
                             <i class="bi bi-receipt fs-5 me-2 align-middle"></i>transactions
                         </button>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="/Roles/" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Loads</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/Accounts/" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Withdrawals</p>
+                                </a>
+                            </li>
+
+                        </ul>
                     </li>
-                    
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="setting-tab" data-bs-toggle="tab" data-bs-target="#setting-tab-pane"
+                                type="button" role="tab" aria-controls="setting-tab-pane" aria-selected="false">
+                            <i class="bi bi-gear fs-5 me-2 align-middle"></i>Setting
+                        </button>
+                    </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="password-tab" data-bs-toggle="tab" data-bs-target="#password-tab-pane"
                                 type="button" role="tab" aria-controls="password-tab-pane" aria-selected="false">
@@ -206,18 +231,20 @@
                                     <span class="font-small">Total 6 Activity</span>
                                 </div>
                                 <!-- my booking section -->
-                                <div class="p-0 p-lg-3">
+                                <div class="p-0 p-lg-6">
                                     <div class="tble_wrap">
                                         <div class="table-responsive theme-border-radius">
                                             <!-- booking table -->
-                                            <table class="table">
-                                                <tbody>
+                                            <table id="example3" class="table table-hover" style="width:100%">
+                                                <thead>
                                                     <tr>
                                                         <th>Date/Time</th>
                                                         <th>Type</th>
                                                         <th>Points</th>
                                                         <th>Amount</th>
                                                     </tr>
+                                                </thead>
+                                                <tbody>
                                                     <tr>
                                                         <td>2023-01-05 15:33:53</td>
                                                         <td>Deposit</td>
@@ -246,6 +273,48 @@
                                                         <td>2023-01-05 15:33:53</td>
                                                         <td>Withdraw</td>
                                                         <td>1900</td>
+                                                        <td><img src="/assets/images/icons/btc.png" alt="icon"> 0.00016556</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-01-05 15:33:53</td>
+                                                        <td>Commision</td>
+                                                        <td>1500</td>
+                                                        <td><img src="/assets/images/icons/btc.png" alt="icon"> 0.00016556</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-01-05 15:33:53</td>
+                                                        <td>Commision</td>
+                                                        <td>1500</td>
+                                                        <td><img src="/assets/images/icons/btc.png" alt="icon"> 0.00016556</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-01-05 15:33:53</td>
+                                                        <td>Commision</td>
+                                                        <td>1500</td>
+                                                        <td><img src="/assets/images/icons/btc.png" alt="icon"> 0.00016556</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-01-05 15:33:53</td>
+                                                        <td>Commision</td>
+                                                        <td>1500</td>
+                                                        <td><img src="/assets/images/icons/btc.png" alt="icon"> 0.00016556</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-01-05 15:33:53</td>
+                                                        <td>Commision</td>
+                                                        <td>1500</td>
+                                                        <td><img src="/assets/images/icons/btc.png" alt="icon"> 0.00016556</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-01-05 15:33:53</td>
+                                                        <td>Commision</td>
+                                                        <td>1500</td>
+                                                        <td><img src="/assets/images/icons/btc.png" alt="icon"> 0.00016556</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-01-05 15:33:53</td>
+                                                        <td>Commision</td>
+                                                        <td>1500</td>
                                                         <td><img src="/assets/images/icons/btc.png" alt="icon"> 0.00016556</td>
                                                     </tr>
                                                     <tr>
@@ -358,6 +427,22 @@
                                                     </tr>
                                                     <tr>
                                                         <td>10</td>
+                                                        <td>#LT2906HM475F</td>
+                                                        <td>USDT</td>
+                                                        <td>$754.00</td>
+                                                        <td><span class="text-success">CONFIRMED</span></td>
+                                                        <td><span class="theme-text-secondary"><i class="bi bi-eye-fill"></i></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>11</td>
+                                                        <td>#LT2906HM475F</td>
+                                                        <td>USDT</td>
+                                                        <td>$754.00</td>
+                                                        <td><span class="text-success">CONFIRMED</span></td>
+                                                        <td><span class="theme-text-secondary"><i class="bi bi-eye-fill"></i></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>12</td>
                                                         <td>#LT2906HM475F</td>
                                                         <td>USDT</td>
                                                         <td>$754.00</td>
@@ -832,7 +917,7 @@
                                     </div>
                                 </div>
                                 <div class="table-responsive theme-border-radius">
-                                    <table class="table">
+                                    <table id="example4" class="table table-hover" style="width:100%">
                                         <thead>
                                             <tr>
                                                 <th>Date</th>
@@ -863,6 +948,41 @@
                                                 <td>Chim30Kis</td>
                                                 <td>$40</td>
                                                 <td>Chim30Kis@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26 04 2023</td>
+                                                <td>Mobile</td>
+                                                <td>yello@mim</td>
+                                                <td>$142</td>
+                                                <td>yello432@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26 04 2023</td>
+                                                <td>Mobile</td>
+                                                <td>yello@mim</td>
+                                                <td>$142</td>
+                                                <td>yello432@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26 04 2023</td>
+                                                <td>Mobile</td>
+                                                <td>yello@mim</td>
+                                                <td>$142</td>
+                                                <td>yello432@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26 04 2023</td>
+                                                <td>Mobile</td>
+                                                <td>yello@mim</td>
+                                                <td>$142</td>
+                                                <td>yello432@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26 04 2023</td>
+                                                <td>Mobile</td>
+                                                <td>yello@mim</td>
+                                                <td>$142</td>
+                                                <td>yello432@gmail.com</td>
                                             </tr>
                                             <tr>
                                                 <td>26 04 2023</td>

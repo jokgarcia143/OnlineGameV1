@@ -1,0 +1,63 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="tab-pane fade show active" id="withdraw-tab-pane" role="tabpanel" aria-labelledby="withdraw-tab" tabindex="0">
+    <!-- 4. withdraw content -->
+    <div class="p-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h5 class="fs-5 fw-bold mb-3">Withdrawal</h5>
+                <p class="mb-3">Maximum withdrawal amount is $100</p>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <div class="theme-border-radius theme-transparent-bg p-4">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label>Available to withdraw</label>
+                                    <div class="balance">0.1018183873 <span>BTC</span></div>
+                                    <p class="mb-0 text-center">1BTC = 49,345.50 USD</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label>Withdrawal Amount</label>
+                                    <div class="input-select-wrap d-flex align-items-center">
+                                        <input type="text" placeholder="e.g. 100">
+                                        <select>
+                                            <option value="1">USD</option>
+                                            <option value="2">INR</option>
+                                            <option value="3">AUD</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <ul class="currency-amount">
+                                    <li><a href="javascript:void(0)">$100</a></li>
+                                    <li><a href="javascript:void(0)">$200</a></li>
+                                    <li><a href="javascript:void(0)">$300</a></li>
+                                    <li><a href="javascript:void(0)">$400</a></li>
+                                    <li><a href="javascript:void(0)">$500</a></li>
+                                    <li><a href="javascript:void(0)">$600</a></li>
+                                    <li><a href="javascript:void(0)">$700</a></li>
+                                    <li><a href="javascript:void(0)">$800</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-12 mt-3 text-center">
+                                <button class="rounded-pill btn custom-btn-primary primary-btn-effect d-inline-flex justify-content-center align-items-center px-5">
+                                    Withdrawal
+                                </button>
+                                <div class="mt-4">
+                                    <h6 class="theme-text-accent-three">Processing fee:</h6>
+                                    <p class="mb-0">Your deposit will also have 0.0006 BTC subtracted the transaction fee.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

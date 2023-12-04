@@ -1,0 +1,203 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="tab-pane fade show active" id="dashboard-tab-pane" role="tabpanel" aria-labelledby="dashboard-tab" tabindex="0">
+    <!-- 1. dashboard section -->
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                
+                @* <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="theme-box-shadow theme-border-radius p-2 theme-bg-white theme-transparent-bg">
+                        <div class="row g-0">
+                            <div class="col-4 overflow-hidden theme-border-radius">
+                                <div class="overflow-hidden">
+                                    <figure class="mb-0">
+                                        <img src="/assets/images/dashboard/profile-img.png" class="img-fluid"
+                                             alt="dashboard icon 01" title="dashboard icon 01">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="ps-md-0 ps-xxl-3 d-flex justify-content-between align-items-center h-100">
+                                    <div class="d-flex flex-column">
+                                        <span class="d-flex fw-bold">Master</span>
+                                        <span class="fw-bold price theme-text-secondary">
+                                            3
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- dashboard features -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="theme-box-shadow theme-border-radius p-2 theme-bg-white theme-transparent-bg">
+                        <div class="row g-0">
+                            <div class="col-4 overflow-hidden theme-border-radius">
+                                <div class="overflow-hidden">
+                                    <figure class="mb-0">
+                                        <img src="/assets/images/icons/dashboard-icon02.png" class="img-fluid"
+                                             alt="dashboard icon 01" title="dashboard icon 01">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="ps-md-0 ps-xxl-3 d-flex justify-content-between align-items-center h-100">
+                                    <div class="d-flex flex-column">
+                                        <span class="d-flex fw-bold">Gold</span>
+                                        <span class="fw-bold price theme-text-secondary">
+                                            200
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- dashboard features -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="theme-box-shadow theme-border-radius p-2 theme-bg-white theme-transparent-bg">
+                        <div class="row g-0">
+                            <div class="col-4 overflow-hidden theme-border-radius">
+                                <div class="overflow-hidden">
+                                    <figure class="mb-0">
+                                        <img src="/assets/images/icons/dashboard-icon03.png" class="img-fluid"
+                                             alt="dashboard icon 03" title="dashboard icon 03">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="ps-md-0 ps-xxl-3 d-flex justify-content-between align-items-center h-100">
+                                    <div class="d-flex flex-column">
+                                        <span class="d-flex fw-bold">Player</span>
+                                        <span class="fw-bold price theme-text-secondary">
+                                            210
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- dashboard features -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="theme-box-shadow theme-border-radius p-2 theme-bg-white theme-transparent-bg">
+                        <div class="row g-0">
+                            <div class="col-4 overflow-hidden theme-border-radius">
+                                <div class="overflow-hidden">
+                                    <figure class="mb-0">
+                                        <img src="/assets/images/icons/dashboard-icon04.png" class="img-fluid"
+                                             alt="dashboard icon 04" title="dashboard icon 04">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="ps-md-0 ps-xxl-3 d-flex justify-content-between align-items-center h-100">
+                                    <div class="d-flex flex-column">
+                                        <span class="d-flex fw-bold">Any Amount</span>
+                                        <span class="fw-bold price theme-text-secondary">
+                                            <i class="bi bi-currency-peso"></i>
+                                            PHP 10,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> *@
+                <!-- dashboard features -->
+            </div>
+            <!-- recent transaction section -->
+            <div class="d-flex flex-column theme-border-radius theme-bg-white theme-box-shadow">
+                <!-- my wallet section -->
+                <div class="d-flex justify-content-between p-3 wallet-head">
+                    <h2>Affiliate Center</h2>
+                </div>
+
+                <!-- my transaction section -->
+                <div class="p-0 p-lg-3">
+                    <div class="tble_wrap">
+                        <div class="table-responsive theme-border-radius">
+                            <!-- transaction table -->
+                            
+                                <table id="tbl-affiliates" class="table table-hover table-bordered" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Date Joined</th>
+                                            <th>Name</th>
+                                            <th>User Name</th>
+                                            <th>Sponsor</th>
+                                            <th>Commissions</th>
+                                            <th>Bets</th>
+                                            <th>Games</th>
+                                            <th>Recruits</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01-01-2023</td>
+                                            <td>Peter R</td>
+                                            <td>pedro</td>
+                                            <td>bossing123</td>
+                                            <td>PHP 10,000.00</td>
+                                            <td>50</td>
+                                            <td>100</td>
+                                            <td><a href="#">100</a></td>
+                                            <td><span class="text-success">ACTIVE</span></td>
+                                            <td>
+                                                <a class="btn btn-sm btn-info rounded-0">Details</a>
+                                                <a class="btn btn-sm btn-danger rounded-0">Block</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>02-15-2023</td>
+                                            <td>Daniel P</td>
+                                            <td>summer</td>
+                                            <td>onyok</td>
+                                            <td>PHP 10,000.00</td>
+                                            <td>50</td>
+                                            <td>100</td>
+                                            <td><a href="#">10</a></td>
+                                            <td><span class="text-success">ACTIVE</span></td>
+                                            <td>
+                                                <a class="btn btn-sm btn-info rounded-0">Details</a>
+                                                <a class="btn btn-sm btn-danger rounded-0">Block</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>01-01-2023</td>
+                                            <td>Jok G</td>
+                                            <td>joko</td>
+                                            <td>bossing123</td>
+                                            <td>PHP 10,000.00</td>
+                                            <td>50</td>
+                                            <td>100</td>
+                                            <td><a href="#">75</a></td>
+                                            <td><span class="text-danger">INACTIVE</span></td>
+                                            <td>
+                                                <a class="btn btn-sm btn-success rounded-0">Activate</a>
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            
+                            <div class="theme-border-radius theme-transparent-bg p-3 mt-4">
+                                <p class="fs-5 fw-bold mb-3" style="color:yellow">Your Affiliate Link</p>
+                                <div class="input-area">
+                                    <input type="text" value="http://wwww.joko.com/212121">
+                                    <i class="bi bi-back"></i>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

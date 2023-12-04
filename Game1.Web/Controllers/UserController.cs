@@ -55,7 +55,7 @@ namespace Game1.Web.Controllers
                 if (isValid)
                 {
                     if(user.Level == 0)
-                        return RedirectToAction("AdminView", "Dashboard", new { userName = model.userName });
+                        return RedirectToAction("Index", "Approval");
                     else
                     {
                         return RedirectToAction("PlayerView", "Dashboard", new { userName = model.userName });
